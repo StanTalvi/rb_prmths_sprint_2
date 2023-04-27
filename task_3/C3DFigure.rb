@@ -1,7 +1,7 @@
 class C3DFigure
-    
+
     def initialize(height)
-            @height = height
+        @height = height
     end 
         
     def volume
