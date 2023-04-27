@@ -10,6 +10,6 @@ class Pyramid_triangular  < C3DFigure
 
     def area
         halfper = (@base_side_a + @base_side_b + @base_side_c) * 0.5
-        (1.0 / 3.0) * Math.sqrt(halfper * (halfper - @base_side_a) * (halfper - @base_side_b) * (halfper - @base_side_c))
+        Math.sqrt(halfper * (halfper - @base_side_a) * (halfper - @base_side_b) * (halfper - @base_side_c)) / 3
     end
 end
