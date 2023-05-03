@@ -1,8 +1,9 @@
-require_relative("./MessageSimple")
+require_relative("./Message")
 
 
-class MessageWithDate < MessageSimple
+class MessageWithDate < Message
     def initialize(text)
-        @text = super(text) + " #{Time.new.year}/#{Time.new.month}/#{Time.new.day}"
+        @text = text + "\nMessage date is #{Time.new.year}/#{Time.new.month}/#{Time.new.day}"
+        super(@text)
     end
 end
