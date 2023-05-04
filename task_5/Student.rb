@@ -1,5 +1,5 @@
 class Student
-    attr_reader :id, :first_name, :last_name, :birth_date
+    
     def initialize(id, first_name, last_name, birth_date)
         @id = id
         @first_name = first_name
