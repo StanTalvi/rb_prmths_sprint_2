@@ -1,4 +1,5 @@
 class Student
+
     attr_reader :id, :first_name, :last_name, :birth_date
    
     def initialize(id, first_name, last_name, birth_date)
@@ -11,4 +12,5 @@ class Student
     def to_s
         "Student, ID: #{id}, #{first_name} #{last_name}, born #{birth_date}"
     end
+    
 end

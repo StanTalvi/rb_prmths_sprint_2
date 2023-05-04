@@ -19,4 +19,5 @@ class StudentGroup
         puts "Wierd Scholarship: our People"
         @students.each { |key, value| puts "Student, ID: #{key}, #{value[0]} #{value[1]}, born #{value[2]}" }
     end
+    
 end
