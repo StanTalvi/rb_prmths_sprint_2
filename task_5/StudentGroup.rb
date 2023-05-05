@@ -11,12 +11,12 @@ class StudentGroup
     end
 
     def add_student(student)
-        raise "NOPE that ID ain't vacant" if is_student_present?(student)
+        raise "NOPE that ID (#{student.id}) ain't vacant" if is_student_present?(student)
         @students[student.id] = [student.first_name, student.last_name, student.birth_date] 
     end
 
     def show_students
-        puts "Wierd Scholarship: our People"
+        puts "#{@name}: our People"
         @students.each { |key, value| puts "Student, ID: #{key}, #{value[0]} #{value[1]}, born #{value[2]}" }
     end
     
