@@ -26,7 +26,7 @@ class ToDoList
         @list.delete(id.to_s.rjust(6, '0'))
     end
 
-    #методи для зміни інших змінних завдання (name, text)
+    #додати методи для зміни інших змінних завдання (name, text)
     
     def alter_deadline(id, year = nil, month = nil , day = nil)
         @list[id.to_s.rjust(6, '0')][3] = Date.new(year, month, day) unless day == nil
