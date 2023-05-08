@@ -1,6 +1,5 @@
 require_relative("./ToDoItem")
 
-
 class ToDoList
     
     def initialize(name)
@@ -71,6 +70,7 @@ class ToDoList
     def time_left(deadline)
         "Time left (days): #{deadline == "N/A" ? "N/A" : "#{(deadline - Time.now.to_date).to_i}"}"
     end
+    
 end
 
 

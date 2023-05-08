@@ -1,5 +1,7 @@
 class ToDoItem
+
     require 'date'
+
     attr_reader :name, :text, :status, :id, :deadline # needed in ToDoList class
     
     @@id = 1 # initial template for tasks IDs
@@ -12,5 +14,6 @@ class ToDoItem
         @deadline = Date.new(deadline_year, deadline_month, deadline_day) unless deadline_day == nil # optional deadline
         @@id += 1 # incrementing template for the further task IDs
     end
+    
 end
 
